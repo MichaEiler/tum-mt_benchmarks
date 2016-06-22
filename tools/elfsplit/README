@@ -1,0 +1,12 @@
+Description:
+
+    Splits a binary file into separate files by a given string identifier.
+
+Example:
+
+    ./elfsplit inputFile.bin BC outputFilePrefix
+
+Purpose:
+
+    The kernel code dumped by the intel framework is not fully compatible with the elf standard.
+    Therefore we simply split it by looking for the 'BC' string signifying the start of llvm bytecode.

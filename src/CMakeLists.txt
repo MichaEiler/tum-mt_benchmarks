@@ -1,0 +1,19 @@
+set(SOURCE
+    ${SOURCE}
+    ${CMAKE_CURRENT_SOURCE_DIR}/applicationcontroller.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/benchmarkbase.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/computecontroller.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/timer.cpp
+    PARENT_SCOPE
+)
+set(HEADERS
+    ${HEADERS}
+    ${CMAKE_CURRENT_SOURCE_DIR}/applicationcontroller.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/benchmarkbase.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/clglobal.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/computecontroller.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/statistics.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/timer.hpp
+    PARENT_SCOPE
+)

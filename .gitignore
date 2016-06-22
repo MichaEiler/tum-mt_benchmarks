@@ -1,0 +1,11 @@
+bin/bench
+bench
+build/*
+tools/elfunpack/build/*
+tools/elfsplit/build/*
+src/cl/*.bin
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+

@@ -1,0 +1,25 @@
+Drivers:
+    Install AMD APP SDK v3 or Intel OpenCL Runtime 15.1 to process kernels on CPUs.
+    If the framework is not detected, make sure that a file pointing to libOpenCl.so is in /etc/OpenCl/vendors/.
+
+    Install beignet, AMD Crimson or NVidia GeForce drivers to execute kernels on GPUs
+
+Windows/Visual Studio:
+    If you checked out the source code on a network drive add the following entry
+        <loadFromRemoteSources enabled="true"/>
+    to the <runtime> region in the following file:
+        C:\\programfiles (x86)\microsoft visualstuddio 14.0\Common7\IDE\devenv.exe.config
+
+    Use cmake-gui to create a visual studio solution.
+
+Linux:
+    sudo apt-get install clinfo ocl-icd-dev ocl-icd-opencl-dev ocl-icd-libopencl1 opencl-headers cmake g++
+    mkdir -p build
+    cd build
+    cmake ../
+    make
+    ./bench
+  
+    # Note: some proprietary drivers or frameworks like to overwrite libOpenCl or clinfo provided by the ubuntu
+    # packages. that's okay as long as there are any on the system... if you remove those, reinstall the drivers
+    # again (if apt complains about conflicting packages, use dpkg instead to remove the troublesome ones)

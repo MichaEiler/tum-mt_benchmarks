@@ -1,0 +1,36 @@
+set(SOURCE
+    ${SOURCE}
+    ${CMAKE_CURRENT_SOURCE_DIR}/api.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/blackscholes.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/cfd.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/edge.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/fft.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gemm.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/kmeans.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/memory.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/spmv.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/stencil.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/streamcluster.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/transpose.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/vecop.cpp
+    PARENT_SCOPE
+)
+
+set(HEADERS
+    ${HEADERS}
+    ${CMAKE_CURRENT_SOURCE_DIR}/api.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/blackscholes.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/cfd.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/edge.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/fft.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gemm.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/kmeans.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/memory.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/spmv.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/stencil.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/streamcluster.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/transpose.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/vecop.hpp
+    PARENT_SCOPE
+)
+

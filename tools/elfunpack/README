@@ -1,0 +1,15 @@
+Description:
+
+    Extracts section content from an elf container. The section is described by its name.
+
+Example:
+
+    ./elfunpack inputFile.bin .llvmir outputFile.bin
+
+Purpose:
+
+    The AMD APP SDK if asked to dump a compiled OpenCL kernel stores all the information in elf containers.
+    The LLVM IR is stored in a section identified by .llvmir
+    Converting it to a readable form is done by:
+
+    llvm-dis-3.6 outputFile.bin -o outputFile.bc        # tested with version 3.5 and 3.6, others might work as well
